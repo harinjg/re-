@@ -1,0 +1,194 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow-x: hidden;
+}
+
+marquee {
+  position: fixed;
+  top: 0;
+  padding: 4px 0px;
+  background-color: #ff3333;
+  font-size: 24px;
+  font-family: "ComputerModernRegular-Regular";
+}
+
+h1 {
+  width: 72vw;
+  margin: 48px 0 144px 14vw;
+  font-family: "ComputerModernRegular-Regular";
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 1.25;
+  page-break-after: always;
+}
+
+h2 {
+  width: 72vw;
+  margin: 0 0 6px 14vw;
+  font-family: "ComputerModernRegular-Regular";
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 1.25;
+}
+
+p {
+  width: 72vw;
+  margin: 0 6px 0 14vw;
+  font-family: "ComputerModernRegular-Regular";
+  font-size: 24px;
+  line-height: 1.25;
+}
+
+small {
+  margin-left: 2px;
+  font-size: 0.5em;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  perspective: 1000vw;
+}
+
+.carousel {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+/* carousel 페이지 공동 css */
+.page {
+  display: none;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 0px;
+  text-align: left;
+  color: black;
+  font-family: "ComputerModernRegular-Regular";
+  overflow-y: auto;
+}
+
+.page:nth-child(1),
+.page:nth-child(2) {
+  display: block;
+}
+
+/* 1면 */
+.page:nth-child(4n + 1) {
+  transform: rotateY(0deg) translate3d(0, 0, 0);
+  background-color: hsl(270, 61%, 75%);
+}
+
+/* 2면 */
+.page:nth-child(4n + 2) {
+  transform: rotateY(90deg) translate3d(0, 0, 0);
+  background-color: MistyRose;
+}
+
+/* 3면 */
+.page:nth-child(4n + 3) {
+  transform: rotateY(180deg) translate3d(0, 0, 0);
+  background-color: #fff7b3;
+}
+
+/* 4면 */
+.page:nth-child(4n + 0) {
+  transform: rotateY(270deg) translate3d(0, 0, 0);
+  background-color: hsl(180, 14%, 50%);
+}
+
+.small-title {
+  font-size: 40px;
+  line-height: 45px;
+  font-family: "ComputerModernRegular-Regular";
+  margin-bottom: 16px;
+}
+
+
+/* navigator */
+.next {
+  position: fixed;
+  top: 50%;
+  right: 2vw;
+  border: 1px dotted black;
+  padding: 12px 36px;
+  border-radius: 40px;
+  font-size: 36px;
+  font-family: "ComputerModernRegular-Regular";
+  cursor: pointer;
+}
+
+.prev {
+  position: fixed;
+  top: 50%;
+  left: 2vw;
+  text-align: center;
+  border: 1px dotted black;
+  padding: 12px 36px;
+  border-radius: 40px;
+  font-size: 36px;
+  font-family: "ComputerModernRegular-Regular";
+  cursor: pointer;
+}
+
+.page-number {
+  position: fixed;
+  top: 89vh;
+  right: 2vw;
+  font-size: 36px;
+  border: 1px dotted black;
+  color: inherit;
+  padding: 20px 40px;
+  border-radius: 40px;
+  font-family: "ComputerModernRegular-Regular";
+}
+
+pre {
+  tab-size: 16;
+  font-family: "ComputerModernRegular-Regular";
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+::selection {
+  color: black;
+  background: #ee82ee;
+}
+
+/* typeface */
+@font-face {
+  font-family: "PirataMonoRegular_v12-Regular";
+  src: url("./PirataMonoRegular_v12-Regular.woff2") format("woff");
+}
+
+@font-face {
+  font-family: "PirataMonoRegularitalic_v3-Regular";
+  src: url("./PirataMonoRegularitalic_v3-Regular.woff2") format("woff");
+}
+
+@font-face {
+  font-family: "PirataMonolight_v3-Light";
+  src: url("./PirataMonolight_v3-Light.woff2") format("woff");
+}
+
+@font-face {
+  font-family: "PirataMonoRegular_proportional_v5-Regular";
+  src: url("./PirataMonoRegular_proportional_v5-Regular.woff2") format("woff");
+}
+
+@font-face {
+  font-family: "ComputerModernRegular-Regular";
+  src: url("https://cdn.glitch.com/ae5a8e61-f583-49cb-aeab-d6e4b0cd377f%2FComputerModernRegular-Regular.woff?v=1620145850326") format("woff");
+}
+@font-face {
+  font-family: "waterbear-Regular";
+  src: url("./waterbear-Regular.woff2") format("woff");
+}
