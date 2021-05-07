@@ -112,7 +112,6 @@ small {
   margin-bottom: 16px;
 }
 
-
 /* navigator */
 .next {
   position: fixed;
@@ -165,30 +164,7 @@ pre {
 
 /* typeface */
 @font-face {
-  font-family: "PirataMonoRegular_v12-Regular";
-  src: url("./PirataMonoRegular_v12-Regular.woff2") format("woff");
-}
-
-@font-face {
-  font-family: "PirataMonoRegularitalic_v3-Regular";
-  src: url("./PirataMonoRegularitalic_v3-Regular.woff2") format("woff");
-}
-
-@font-face {
-  font-family: "PirataMonolight_v3-Light";
-  src: url("./PirataMonolight_v3-Light.woff2") format("woff");
-}
-
-@font-face {
-  font-family: "PirataMonoRegular_proportional_v5-Regular";
-  src: url("./PirataMonoRegular_proportional_v5-Regular.woff2") format("woff");
-}
-
-@font-face {
   font-family: "ComputerModernRegular-Regular";
-  src: url("https://cdn.glitch.com/ae5a8e61-f583-49cb-aeab-d6e4b0cd377f%2FComputerModernRegular-Regular.woff?v=1620145850326") format("woff");
-}
-@font-face {
-  font-family: "waterbear-Regular";
-  src: url("./waterbear-Regular.woff2") format("woff");
+  src: url("https://cdn.glitch.com/ae5a8e61-f583-49cb-aeab-d6e4b0cd377f%2FComputerModernRegular-Regular.woff?v=1620145850326")
+    format("woff");
 }

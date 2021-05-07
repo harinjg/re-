@@ -75,13 +75,8 @@ marquee {
   display: none;
 }
 
-/* @media screen {
-  header.onlyprint,
-  footer.onlyprint {
-    display: none; /* Hide from screen */
-  }
-}
 
+}
   header.onlyprint {
     position: fixed; /* Display only on print page (each) */
     top: 0; /* Because it's header */
@@ -99,26 +94,7 @@ marquee {
     width: 5in;
     margin-left: 3in;
   }
-} */
-
-/* div.header {
-    display: block; text-align: center; 
-    position: running(header);
 }
-
-div.footer {
-    display: block; text-align: center;
-    position: running(footer);
-}
-
-@page {
-    @top-center { content: element(header) }
-}
-
-@page { 
-    @bottom-center { content: element(footer) }
-} */
-
 
 @font-face {
   font-family: "PirataMonoRegular_v9-Regular";
