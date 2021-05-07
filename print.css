@@ -1,0 +1,146 @@
+@page {
+  size: 8.5in 11in;
+  margin-top: 8mm;
+  margin-bottom: 8mm;
+  margin-left: 0mm;
+  margin-right: 0mm;
+}
+
+body,
+div {
+  margin: 0;
+  padding: 0;
+  height: auto;
+}
+
+div {
+  float: none !important;
+  position: static !important;
+  display: inline;
+  box-sizing: content-box !important;
+}
+
+h1 {
+  width: 5in;
+  margin-top: 10mm;
+  margin-left: 3in;
+  font-family: "ComputerModernRegular-Regular";
+  font-weight: normal;
+  font-size: 24pt;
+  page-break-after: always;
+}
+
+h2 {
+  width: 5in;
+  margin-top: 10mm;
+  margin-left: 3in;
+  font-family: "ComputerModernRegular-Regular";
+  font-weight: normal;
+  font-size: 17pt;
+}
+
+p {
+  width: 5in;
+  margin-left: 3in;
+  page-break-after: always;
+  font-family: "ComputerModernRegular-Regular";
+  font-size: 10pt;
+  line-height: 1.4;
+}
+
+marquee {
+  display: none;
+}
+
+.carousel,
+.page {
+  transform: none !important;
+}
+
+.page {
+  display: none !important;
+  overflow: visible !important;
+  padding: 0;
+}
+
+.print {
+  display: block !important;
+}
+
+.next,
+.prev,
+.download-trial,
+.print,
+.page-number {
+  display: none;
+}
+
+/* @media screen {
+  header.onlyprint,
+  footer.onlyprint {
+    display: none; /* Hide from screen */
+  }
+}
+
+  header.onlyprint {
+    position: fixed; /* Display only on print page (each) */
+    top: 0; /* Because it's header */
+    font-family: "ComputerModernRegular-Regular";
+    font-size: 8pt;
+    width: 5in;
+    margin-left: 3in;
+  }
+  
+  footer.onlyprint {
+    position: fixed;
+    bottom: 0; /* Because it's footer */
+    font-family: "ComputerModernRegular-Regular";
+    font-size: 8pt;
+    width: 5in;
+    margin-left: 3in;
+  }
+} */
+
+/* div.header {
+    display: block; text-align: center; 
+    position: running(header);
+}
+
+div.footer {
+    display: block; text-align: center;
+    position: running(footer);
+}
+
+@page {
+    @top-center { content: element(header) }
+}
+
+@page { 
+    @bottom-center { content: element(footer) }
+} */
+
+
+@font-face {
+  font-family: "PirataMonoRegular_v9-Regular";
+  src: url("./PirataMonoRegular_v9-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "PirataMonoRegularItalic_v1-Italic";
+  src: url("./PirataMonoRegularItalic_v1-Italic.woff2") format("woff");
+}
+
+@font-face {
+  font-family: "PirataMonolight_v2-Light";
+  src: url("./PirataMonolight_v2-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "PirataMonoRegular_proportional_v2-Regular";
+  src: url("./PirataMonoRegular_proportional_v2-Regular.woff2") format("woff");
+}
+
+@font-face {
+  font-family: "ComputerModernRegular-Regular";
+  src: url("./ComputerModernRegular-Regular.woff") format("woff");
+}
